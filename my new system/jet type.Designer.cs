@@ -43,7 +43,10 @@
             this.textjetid = new System.Windows.Forms.TextBox();
             this.textcost = new System.Windows.Forms.TextBox();
             this.textDesripition = new System.Windows.Forms.TextBox();
+            this.dataGridViewjettype = new System.Windows.Forms.DataGridView();
+            this.btnviewjettype = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewjettype)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -84,7 +87,7 @@
             this.labeltypeid.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeltypeid.Location = new System.Drawing.Point(21, 188);
             this.labeltypeid.Name = "labeltypeid";
-            this.labeltypeid.Size = new System.Drawing.Size(112, 26);
+            this.labeltypeid.Size = new System.Drawing.Size(113, 26);
             this.labeltypeid.TabIndex = 9;
             this.labeltypeid.Text = "Jet type ID";
             // 
@@ -187,11 +190,33 @@
             this.textDesripition.Size = new System.Drawing.Size(330, 22);
             this.textDesripition.TabIndex = 22;
             // 
+            // dataGridViewjettype
+            // 
+            this.dataGridViewjettype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewjettype.Location = new System.Drawing.Point(595, 191);
+            this.dataGridViewjettype.Name = "dataGridViewjettype";
+            this.dataGridViewjettype.RowHeadersWidth = 51;
+            this.dataGridViewjettype.RowTemplate.Height = 24;
+            this.dataGridViewjettype.Size = new System.Drawing.Size(660, 131);
+            this.dataGridViewjettype.TabIndex = 23;
+            // 
+            // btnviewjettype
+            // 
+            this.btnviewjettype.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnviewjettype.Location = new System.Drawing.Point(913, 345);
+            this.btnviewjettype.Name = "btnviewjettype";
+            this.btnviewjettype.Size = new System.Drawing.Size(241, 53);
+            this.btnviewjettype.TabIndex = 24;
+            this.btnviewjettype.Text = "View";
+            this.btnviewjettype.UseVisualStyleBackColor = true;
+            // 
             // jet_type
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 493);
+            this.ClientSize = new System.Drawing.Size(1267, 521);
+            this.Controls.Add(this.btnviewjettype);
+            this.Controls.Add(this.dataGridViewjettype);
             this.Controls.Add(this.textDesripition);
             this.Controls.Add(this.textcost);
             this.Controls.Add(this.textjetid);
@@ -212,6 +237,7 @@
             this.Text = "jet_type";
             this.Load += new System.EventHandler(this.jet_type_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewjettype)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +260,7 @@
         private System.Windows.Forms.TextBox textjetid;
         private System.Windows.Forms.TextBox textcost;
         private System.Windows.Forms.TextBox textDesripition;
+        private System.Windows.Forms.DataGridView dataGridViewjettype;
+        private System.Windows.Forms.Button btnviewjettype;
     }
 }

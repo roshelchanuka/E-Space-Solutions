@@ -178,6 +178,7 @@
             this.buttonbackejet.TabIndex = 17;
             this.buttonbackejet.Text = "Back";
             this.buttonbackejet.UseVisualStyleBackColor = true;
+            this.buttonbackejet.Click += new System.EventHandler(this.buttonbackejet_Click);
             // 
             // textBoxjetid
             // 
