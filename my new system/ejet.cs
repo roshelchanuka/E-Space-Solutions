@@ -311,5 +311,12 @@ Integrated Security=True";
             textYear.Clear();
             textWeight.Clear();
         }
+
+        private void buttonbackejet_Click(object sender, EventArgs e)
+        {
+            dashbord dashbord = new dashbord();
+            dashbord.Show();
+            this.Hide();
+        }
     }
 }

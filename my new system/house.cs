@@ -69,7 +69,6 @@ namespace my_new_system
 
 
 
-
         private void buttoninsert_Click(object sender, EventArgs e)
         {
             try
@@ -266,6 +265,13 @@ namespace my_new_system
             textBoxlot.Clear();
             textBoxmembers.Clear();
             textBoxfeet.Clear();
+        }
+
+        private void buttondasback_Click(object sender, EventArgs e)
+        {
+            dashbord dash = new dashbord();
+            dash.Show();
+            this.Hide();
         }
     }
 }

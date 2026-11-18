@@ -172,6 +172,7 @@
             this.buttondasback.TabIndex = 29;
             this.buttondasback.Text = "Back";
             this.buttondasback.UseVisualStyleBackColor = true;
+            this.buttondasback.Click += new System.EventHandler(this.buttondasback_Click);
             // 
             // dataGridViewhouse
             // 

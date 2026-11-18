@@ -34,7 +34,7 @@
             this.labeltypeid = new System.Windows.Forms.Label();
             this.labelJetID = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labeldesri = new System.Windows.Forms.Label();
             this.buttoninserttype = new System.Windows.Forms.Button();
             this.buttonupdatetype = new System.Windows.Forms.Button();
             this.buttondeletetype = new System.Windows.Forms.Button();
@@ -43,7 +43,10 @@
             this.textjetid = new System.Windows.Forms.TextBox();
             this.textcost = new System.Windows.Forms.TextBox();
             this.textDesripition = new System.Windows.Forms.TextBox();
+            this.dataGridViewjettype = new System.Windows.Forms.DataGridView();
+            this.btnviewjettype = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewjettype)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -84,7 +87,7 @@
             this.labeltypeid.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeltypeid.Location = new System.Drawing.Point(21, 188);
             this.labeltypeid.Name = "labeltypeid";
-            this.labeltypeid.Size = new System.Drawing.Size(112, 26);
+            this.labeltypeid.Size = new System.Drawing.Size(113, 26);
             this.labeltypeid.TabIndex = 9;
             this.labeltypeid.Text = "Jet type ID";
             // 
@@ -108,15 +111,15 @@
             this.labelCost.TabIndex = 11;
             this.labelCost.Text = "Cost";
             // 
-            // label3
+            // labeldesri
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 359);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 26);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Desripition";
+            this.labeldesri.AutoSize = true;
+            this.labeldesri.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldesri.Location = new System.Drawing.Point(21, 359);
+            this.labeldesri.Name = "labeldesri";
+            this.labeldesri.Size = new System.Drawing.Size(115, 26);
+            this.labeldesri.TabIndex = 12;
+            this.labeldesri.Text = "Desripition";
             // 
             // buttoninserttype
             // 
@@ -138,6 +141,7 @@
             this.buttonupdatetype.TabIndex = 16;
             this.buttonupdatetype.Text = "Update";
             this.buttonupdatetype.UseVisualStyleBackColor = true;
+            this.buttonupdatetype.Click += new System.EventHandler(this.buttonupdatetype_Click);
             // 
             // buttondeletetype
             // 
@@ -148,6 +152,7 @@
             this.buttondeletetype.TabIndex = 17;
             this.buttondeletetype.Text = "Delete";
             this.buttondeletetype.UseVisualStyleBackColor = true;
+            this.buttondeletetype.Click += new System.EventHandler(this.buttondeletetype_Click);
             // 
             // buttonbacktype
             // 
@@ -158,6 +163,7 @@
             this.buttonbacktype.TabIndex = 18;
             this.buttonbacktype.Text = "Back";
             this.buttonbacktype.UseVisualStyleBackColor = true;
+            this.buttonbacktype.Click += new System.EventHandler(this.buttonbacktype_Click);
             // 
             // texttypeid
             // 
@@ -187,11 +193,34 @@
             this.textDesripition.Size = new System.Drawing.Size(330, 22);
             this.textDesripition.TabIndex = 22;
             // 
+            // dataGridViewjettype
+            // 
+            this.dataGridViewjettype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewjettype.Location = new System.Drawing.Point(595, 191);
+            this.dataGridViewjettype.Name = "dataGridViewjettype";
+            this.dataGridViewjettype.RowHeadersWidth = 51;
+            this.dataGridViewjettype.RowTemplate.Height = 24;
+            this.dataGridViewjettype.Size = new System.Drawing.Size(660, 131);
+            this.dataGridViewjettype.TabIndex = 23;
+            // 
+            // btnviewjettype
+            // 
+            this.btnviewjettype.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnviewjettype.Location = new System.Drawing.Point(913, 345);
+            this.btnviewjettype.Name = "btnviewjettype";
+            this.btnviewjettype.Size = new System.Drawing.Size(241, 53);
+            this.btnviewjettype.TabIndex = 24;
+            this.btnviewjettype.Text = "View";
+            this.btnviewjettype.UseVisualStyleBackColor = true;
+            this.btnviewjettype.Click += new System.EventHandler(this.btnviewjettype_Click);
+            // 
             // jet_type
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 493);
+            this.ClientSize = new System.Drawing.Size(1267, 521);
+            this.Controls.Add(this.btnviewjettype);
+            this.Controls.Add(this.dataGridViewjettype);
             this.Controls.Add(this.textDesripition);
             this.Controls.Add(this.textcost);
             this.Controls.Add(this.textjetid);
@@ -200,7 +229,7 @@
             this.Controls.Add(this.buttondeletetype);
             this.Controls.Add(this.buttonupdatetype);
             this.Controls.Add(this.buttoninserttype);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labeldesri);
             this.Controls.Add(this.labelCost);
             this.Controls.Add(this.labelJetID);
             this.Controls.Add(this.labeltypeid);
@@ -212,6 +241,7 @@
             this.Text = "jet_type";
             this.Load += new System.EventHandler(this.jet_type_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewjettype)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +255,7 @@
         private System.Windows.Forms.Label labeltypeid;
         private System.Windows.Forms.Label labelJetID;
         private System.Windows.Forms.Label labelCost;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labeldesri;
         private System.Windows.Forms.Button buttoninserttype;
         private System.Windows.Forms.Button buttonupdatetype;
         private System.Windows.Forms.Button buttondeletetype;
@@ -234,5 +264,7 @@
         private System.Windows.Forms.TextBox textjetid;
         private System.Windows.Forms.TextBox textcost;
         private System.Windows.Forms.TextBox textDesripition;
+        private System.Windows.Forms.DataGridView dataGridViewjettype;
+        private System.Windows.Forms.Button btnviewjettype;
     }
 }
