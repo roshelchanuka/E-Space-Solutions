@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AD98B5F-837B-41B0-8878-451BAC97AB91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>my_new_system</RootNamespace>
+    <AssemblyName>my new system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt-Net-Next, Version=4.2.0.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.2.0\lib\net472\BCrypt-Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admindashcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindashcs.Designer.cs">
+      <DependentUpon>admindashcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminoremp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminoremp.Designer.cs">
+      <DependentUpon>adminoremp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="colo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="colo.Designer.cs">
+      <DependentUpon>colo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColonySuperintendentdas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColonySuperintendentdas.Designer.cs">
+      <DependentUpon>ColonySuperintendentdas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coloviwe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coloviwe.Designer.cs">
+      <DependentUpon>coloviwe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashbord.Designer.cs">
+      <DependentUpon>dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dependent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dependent.Designer.cs">
+      <DependentUpon>dependent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ejet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ejet.Designer.cs">
+      <DependentUpon>ejet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emplog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emplog.Designer.cs">
+      <DependentUpon>emplog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="house.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="house.Designer.cs">
+      <DependentUpon>house.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jet type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jet type.Designer.cs">
+      <DependentUpon>jet type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="job.Designer.cs">
+      <DependentUpon>job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pilot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pilot.Designer.cs">
+      <DependentUpon>pilot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pilotdash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pilotdash.Designer.cs">
+      <DependentUpon>Pilotdash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trip.Designer.cs">
+      <DependentUpon>trip.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminoremp.resx">
+      <DependentUpon>adminoremp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="colo.resx">
+      <DependentUpon>colo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coloviwe.resx">
+      <DependentUpon>coloviwe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashbord.resx">
+      <DependentUpon>dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dependent.resx">
+      <DependentUpon>dependent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ejet.resx">
+      <DependentUpon>ejet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emplog.resx">
+      <DependentUpon>emplog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="house.resx">
+      <DependentUpon>house.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jet type.resx">
+      <DependentUpon>jet type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="job.resx">
+      <DependentUpon>job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pilot.resx">
+      <DependentUpon>pilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="trip.resx">
+      <DependentUpon>trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artists-conception-of-a-future-Mars-colony-The-settlement-includes-an-inflated.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
