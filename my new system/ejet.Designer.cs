@@ -167,6 +167,7 @@
             this.buttondelete.TabIndex = 16;
             this.buttondelete.Text = "Delete";
             this.buttondelete.UseVisualStyleBackColor = true;
+            this.buttondelete.Click += new System.EventHandler(this.buttondelete_Click);
             // 
             // buttonbackejet
             // 
@@ -249,12 +250,13 @@
             this.btnviewejet.TabIndex = 25;
             this.btnviewejet.Text = "View";
             this.btnviewejet.UseVisualStyleBackColor = true;
+            this.btnviewejet.Click += new System.EventHandler(this.btnviewejet_Click);
             // 
             // ejet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1299, 606);
+            this.ClientSize = new System.Drawing.Size(1299, 622);
             this.Controls.Add(this.btnviewejet);
             this.Controls.Add(this.dataGridViewejet);
             this.Controls.Add(this.textWeight);
