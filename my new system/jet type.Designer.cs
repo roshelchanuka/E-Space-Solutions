@@ -193,27 +193,6 @@
             this.textDesripition.Size = new System.Drawing.Size(330, 22);
             this.textDesripition.TabIndex = 22;
             // 
-            // dataGridViewjettype
-            // 
-            this.dataGridViewjettype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewjettype.Location = new System.Drawing.Point(595, 191);
-            this.dataGridViewjettype.Name = "dataGridViewjettype";
-            this.dataGridViewjettype.RowHeadersWidth = 51;
-            this.dataGridViewjettype.RowTemplate.Height = 24;
-            this.dataGridViewjettype.Size = new System.Drawing.Size(660, 131);
-            this.dataGridViewjettype.TabIndex = 23;
-            // 
-            // btnviewjettype
-            // 
-            this.btnviewjettype.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnviewjettype.Location = new System.Drawing.Point(913, 345);
-            this.btnviewjettype.Name = "btnviewjettype";
-            this.btnviewjettype.Size = new System.Drawing.Size(241, 53);
-            this.btnviewjettype.TabIndex = 24;
-            this.btnviewjettype.Text = "View";
-            this.btnviewjettype.UseVisualStyleBackColor = true;
-            this.btnviewjettype.Click += new System.EventHandler(this.btnviewjettype_Click);
-            // 
             // jet_type
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
