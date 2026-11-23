@@ -106,11 +106,11 @@
             // dataGridViewadmindas
             // 
             this.dataGridViewadmindas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewadmindas.Location = new System.Drawing.Point(426, 257);
+            this.dataGridViewadmindas.Location = new System.Drawing.Point(537, 157);
             this.dataGridViewadmindas.Name = "dataGridViewadmindas";
             this.dataGridViewadmindas.RowHeadersWidth = 51;
             this.dataGridViewadmindas.RowTemplate.Height = 24;
-            this.dataGridViewadmindas.Size = new System.Drawing.Size(553, 175);
+            this.dataGridViewadmindas.Size = new System.Drawing.Size(386, 306);
             this.dataGridViewadmindas.TabIndex = 15;
             this.dataGridViewadmindas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewadmindas_CellContentClick);
             // 
