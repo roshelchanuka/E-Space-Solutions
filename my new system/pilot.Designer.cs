@@ -141,6 +141,7 @@
             this.buttonbackpilot.TabIndex = 20;
             this.buttonbackpilot.Text = "Back";
             this.buttonbackpilot.UseVisualStyleBackColor = true;
+            this.buttonbackpilot.Click += new System.EventHandler(this.buttonbackpilot_Click);
             // 
             // textid
             // 

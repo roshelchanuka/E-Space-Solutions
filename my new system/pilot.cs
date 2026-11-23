@@ -261,5 +261,12 @@ Integrated Security=True";
             textname.Clear();
             texthours.Clear();
         }
+
+        private void buttonbackpilot_Click(object sender, EventArgs e)
+        {
+            dashbord dash = new dashbord();
+            dash.Show();
+            this.Hide();
+        }
     }
 }
