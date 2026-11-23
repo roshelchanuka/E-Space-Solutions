@@ -34,7 +34,9 @@
             this.btnreporadmin = new System.Windows.Forms.Button();
             this.btnusers = new System.Windows.Forms.Button();
             this.btnlogout = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -100,6 +102,16 @@
             this.btnlogout.UseVisualStyleBackColor = true;
             this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(426, 257);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(553, 175);
+            this.dataGridView1.TabIndex = 15;
+            // 
             // admindashcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -107,6 +119,7 @@
             this.BackgroundImage = global::my_new_system.Properties.Resources._1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1040, 616);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnlogout);
             this.Controls.Add(this.btnusers);
             this.Controls.Add(this.btnreporadmin);
@@ -116,6 +129,7 @@
             this.Name = "admindashcs";
             this.Text = "admindashcs";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,5 +143,6 @@
         private System.Windows.Forms.Button btnreporadmin;
         private System.Windows.Forms.Button btnusers;
         private System.Windows.Forms.Button btnlogout;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
