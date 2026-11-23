@@ -41,7 +41,10 @@
             this.textid = new System.Windows.Forms.TextBox();
             this.texttype = new System.Windows.Forms.TextBox();
             this.textDescription = new System.Windows.Forms.TextBox();
+            this.dataGridViewjob = new System.Windows.Forms.DataGridView();
+            this.btnviewjob = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewjob)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -92,7 +95,7 @@
             this.labelJobtype.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJobtype.Location = new System.Drawing.Point(32, 240);
             this.labelJobtype.Name = "labelJobtype";
-            this.labelJobtype.Size = new System.Drawing.Size(90, 26);
+            this.labelJobtype.Size = new System.Drawing.Size(91, 26);
             this.labelJobtype.TabIndex = 11;
             this.labelJobtype.Text = "Job type";
             // 
@@ -115,6 +118,7 @@
             this.buttoninsertjob.TabIndex = 16;
             this.buttoninsertjob.Text = "Insert";
             this.buttoninsertjob.UseVisualStyleBackColor = true;
+            this.buttoninsertjob.Click += new System.EventHandler(this.buttoninsertjob_Click);
             // 
             // buttonupdatejob
             // 
@@ -125,6 +129,7 @@
             this.buttonupdatejob.TabIndex = 17;
             this.buttonupdatejob.Text = "Update";
             this.buttonupdatejob.UseVisualStyleBackColor = true;
+            this.buttonupdatejob.Click += new System.EventHandler(this.buttonupdatejob_Click);
             // 
             // buttondeletejob
             // 
@@ -135,6 +140,7 @@
             this.buttondeletejob.TabIndex = 18;
             this.buttondeletejob.Text = "Delete";
             this.buttondeletejob.UseVisualStyleBackColor = true;
+            this.buttondeletejob.Click += new System.EventHandler(this.buttondeletejob_Click);
             // 
             // buttonbackjob
             // 
@@ -167,11 +173,34 @@
             this.textDescription.Size = new System.Drawing.Size(305, 22);
             this.textDescription.TabIndex = 22;
             // 
+            // dataGridViewjob
+            // 
+            this.dataGridViewjob.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewjob.Location = new System.Drawing.Point(665, 127);
+            this.dataGridViewjob.Name = "dataGridViewjob";
+            this.dataGridViewjob.RowHeadersWidth = 51;
+            this.dataGridViewjob.RowTemplate.Height = 24;
+            this.dataGridViewjob.Size = new System.Drawing.Size(546, 155);
+            this.dataGridViewjob.TabIndex = 23;
+            // 
+            // btnviewjob
+            // 
+            this.btnviewjob.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnviewjob.Location = new System.Drawing.Point(933, 297);
+            this.btnviewjob.Name = "btnviewjob";
+            this.btnviewjob.Size = new System.Drawing.Size(151, 43);
+            this.btnviewjob.TabIndex = 24;
+            this.btnviewjob.Text = "View";
+            this.btnviewjob.UseVisualStyleBackColor = true;
+            this.btnviewjob.Click += new System.EventHandler(this.btnviewjob_Click);
+            // 
             // job
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1252, 468);
+            this.Controls.Add(this.btnviewjob);
+            this.Controls.Add(this.dataGridViewjob);
             this.Controls.Add(this.textDescription);
             this.Controls.Add(this.texttype);
             this.Controls.Add(this.textid);
@@ -189,6 +218,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "job";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewjob)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +239,7 @@
         private System.Windows.Forms.TextBox textid;
         private System.Windows.Forms.TextBox texttype;
         private System.Windows.Forms.TextBox textDescription;
+        private System.Windows.Forms.DataGridView dataGridViewjob;
+        private System.Windows.Forms.Button btnviewjob;
     }
 }

@@ -45,7 +45,10 @@
             this.textcode = new System.Windows.Forms.TextBox();
             this.textldate = new System.Windows.Forms.TextBox();
             this.textrdate = new System.Windows.Forms.TextBox();
+            this.dataGridViewtrip = new System.Windows.Forms.DataGridView();
+            this.btnviewtrip = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewtrip)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -139,6 +142,7 @@
             this.buttoninserttrip.TabIndex = 18;
             this.buttoninserttrip.Text = "Insert";
             this.buttoninserttrip.UseVisualStyleBackColor = true;
+            this.buttoninserttrip.Click += new System.EventHandler(this.buttoninserttrip_Click);
             // 
             // buttonupdatetrip
             // 
@@ -149,6 +153,7 @@
             this.buttonupdatetrip.TabIndex = 19;
             this.buttonupdatetrip.Text = "Update";
             this.buttonupdatetrip.UseVisualStyleBackColor = true;
+            this.buttonupdatetrip.Click += new System.EventHandler(this.buttonupdatetrip_Click);
             // 
             // buttondeletetrip
             // 
@@ -159,6 +164,7 @@
             this.buttondeletetrip.TabIndex = 20;
             this.buttondeletetrip.Text = "Delete";
             this.buttondeletetrip.UseVisualStyleBackColor = true;
+            this.buttondeletetrip.Click += new System.EventHandler(this.buttondeletetrip_Click);
             // 
             // buttonbacktrip
             // 
@@ -205,11 +211,34 @@
             this.textrdate.Size = new System.Drawing.Size(321, 22);
             this.textrdate.TabIndex = 26;
             // 
+            // dataGridViewtrip
+            // 
+            this.dataGridViewtrip.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewtrip.Location = new System.Drawing.Point(685, 195);
+            this.dataGridViewtrip.Name = "dataGridViewtrip";
+            this.dataGridViewtrip.RowHeadersWidth = 51;
+            this.dataGridViewtrip.RowTemplate.Height = 24;
+            this.dataGridViewtrip.Size = new System.Drawing.Size(527, 130);
+            this.dataGridViewtrip.TabIndex = 27;
+            // 
+            // btnviewtrip
+            // 
+            this.btnviewtrip.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnviewtrip.Location = new System.Drawing.Point(901, 343);
+            this.btnviewtrip.Name = "btnviewtrip";
+            this.btnviewtrip.Size = new System.Drawing.Size(153, 41);
+            this.btnviewtrip.TabIndex = 28;
+            this.btnviewtrip.Text = "View";
+            this.btnviewtrip.UseVisualStyleBackColor = true;
+            this.btnviewtrip.Click += new System.EventHandler(this.btnviewtrip_Click);
+            // 
             // trip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 569);
+            this.ClientSize = new System.Drawing.Size(1245, 565);
+            this.Controls.Add(this.btnviewtrip);
+            this.Controls.Add(this.dataGridViewtrip);
             this.Controls.Add(this.textrdate);
             this.Controls.Add(this.textldate);
             this.Controls.Add(this.textcode);
@@ -231,6 +260,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "trip";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewtrip)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +285,7 @@
         private System.Windows.Forms.TextBox textcode;
         private System.Windows.Forms.TextBox textldate;
         private System.Windows.Forms.TextBox textrdate;
+        private System.Windows.Forms.DataGridView dataGridViewtrip;
+        private System.Windows.Forms.Button btnviewtrip;
     }
 }

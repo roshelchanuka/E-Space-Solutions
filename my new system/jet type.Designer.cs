@@ -193,6 +193,25 @@
             this.textDesripition.Size = new System.Drawing.Size(330, 22);
             this.textDesripition.TabIndex = 22;
             // 
+            // dataGridViewjettype
+            // 
+            this.dataGridViewjettype.ColumnHeadersHeight = 29;
+            this.dataGridViewjettype.Location = new System.Drawing.Point(696, 138);
+            this.dataGridViewjettype.Name = "dataGridViewjettype";
+            this.dataGridViewjettype.RowHeadersWidth = 51;
+            this.dataGridViewjettype.Size = new System.Drawing.Size(480, 139);
+            this.dataGridViewjettype.TabIndex = 1;
+            // 
+            // btnviewjettype
+            // 
+            this.btnviewjettype.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnviewjettype.Location = new System.Drawing.Point(878, 312);
+            this.btnviewjettype.Name = "btnviewjettype";
+            this.btnviewjettype.Size = new System.Drawing.Size(143, 44);
+            this.btnviewjettype.TabIndex = 0;
+            this.btnviewjettype.Text = "View";
+            this.btnviewjettype.Click += new System.EventHandler(this.btnviewjettype_Click_1);
+            // 
             // jet_type
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

@@ -72,6 +72,21 @@ Integrated Security=True";
 
         private void buttoninserttype_Click(object sender, EventArgs e)
         {
+
+            decimal cost;
+
+            if (!decimal.TryParse(textcost.Text, out cost))
+            {
+                MessageBox.Show("Please enter a valid Cost.");
+                return;
+            }
+
+            if (textjetid.Text == "")
+            {
+                MessageBox.Show("Please enter Jet ID.");
+                return;
+            }
+
             try
             {
                 using (SqlConnection con =
@@ -275,6 +290,27 @@ Integrated Security=True";
             textjetid.Clear();
             textcost.Clear();
             textDesripition.Clear();
+        }
+
+        private void btnviewjettype_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridViewjettype.CurrentRow != null)
+            {
+                DataGridViewRow row =
+                    dataGridViewjettype.CurrentRow;
+
+                texttypeid.Text =
+                    row.Cells[0].Value?.ToString() ?? "";
+
+                textjetid.Text =
+                    row.Cells[1].Value?.ToString() ?? "";
+
+                textcost.Text =
+                    row.Cells[2].Value?.ToString() ?? "";
+
+                textDesripition.Text =
+                    row.Cells[3].Value?.ToString() ?? "";
+            }
         }
     }
 }

@@ -86,6 +86,12 @@
     <Compile Include="ColonySuperintendentdas.Designer.cs">
       <DependentUpon>ColonySuperintendentdas.cs</DependentUpon>
     </Compile>
+    <Compile Include="colorepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="colorepo.Designer.cs">
+      <DependentUpon>colorepo.cs</DependentUpon>
+    </Compile>
     <Compile Include="coloviwe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     <Compile Include="job.Designer.cs">
       <DependentUpon>job.cs</DependentUpon>
     </Compile>
+    <Compile Include="jobrepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jobrepo.Designer.cs">
+      <DependentUpon>jobrepo.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,11 +178,20 @@
     <Compile Include="trip.Designer.cs">
       <DependentUpon>trip.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="admindashcs.resx">
+      <DependentUpon>admindashcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminoremp.resx">
       <DependentUpon>adminoremp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="colo.resx">
       <DependentUpon>colo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColonySuperintendentdas.resx">
+      <DependentUpon>ColonySuperintendentdas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="colorepo.resx">
+      <DependentUpon>colorepo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="coloviwe.resx">
       <DependentUpon>coloviwe.cs</DependentUpon>
@@ -199,11 +220,17 @@
     <EmbeddedResource Include="job.resx">
       <DependentUpon>job.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="jobrepo.resx">
+      <DependentUpon>jobrepo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pilot.resx">
       <DependentUpon>pilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pilotdash.resx">
+      <DependentUpon>Pilotdash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

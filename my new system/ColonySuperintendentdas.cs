@@ -16,5 +16,12 @@ namespace my_new_system
         {
             InitializeComponent();
         }
+
+        private void btncolorepo_Click(object sender, EventArgs e)
+        {
+            colorepo colo = new colorepo();
+            colo.Show();
+            this.Hide();
+        }
     }
 }
