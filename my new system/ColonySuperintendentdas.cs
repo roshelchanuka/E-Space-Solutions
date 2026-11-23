@@ -31,7 +31,19 @@ namespace my_new_system
 
         private void btnlogoutcolosup_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+        "Are you sure you want to log out?",
+        "Logout",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                homepage homepage = new homepage();
+                homepage.Show();
+
+                this.Hide(); // Current form hide 
+            }
         }
 
         private void btnjobrepo_Click(object sender, EventArgs e)
