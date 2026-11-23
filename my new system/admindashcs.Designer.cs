@@ -98,6 +98,7 @@
             this.btnlogout.TabIndex = 14;
             this.btnlogout.Text = "Log Out";
             this.btnlogout.UseVisualStyleBackColor = true;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
             // admindashcs
             // 
