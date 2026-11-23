@@ -90,6 +90,7 @@
             this.btnbackjobrepo.TabIndex = 21;
             this.btnbackjobrepo.Text = "Back";
             this.btnbackjobrepo.UseVisualStyleBackColor = true;
+            this.btnbackjobrepo.Click += new System.EventHandler(this.btnbackjobrepo_Click);
             // 
             // btnviewjobrepo
             // 

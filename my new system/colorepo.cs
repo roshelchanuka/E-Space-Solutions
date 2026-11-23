@@ -123,5 +123,13 @@ namespace my_new_system
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnbackcolorepo_Click(object sender, EventArgs e)
+        {
+            ColonySuperintendentdas colonySuperintendentdas = new ColonySuperintendentdas();
+            colonySuperintendentdas.Show();
+
+            this.Hide();
+        }
     }
 }

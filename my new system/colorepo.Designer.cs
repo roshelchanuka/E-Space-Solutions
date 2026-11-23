@@ -113,6 +113,7 @@
             this.btnbackcolorepo.TabIndex = 18;
             this.btnbackcolorepo.Text = "Back";
             this.btnbackcolorepo.UseVisualStyleBackColor = true;
+            this.btnbackcolorepo.Click += new System.EventHandler(this.btnbackcolorepo_Click);
             // 
             // colorepo
             // 
