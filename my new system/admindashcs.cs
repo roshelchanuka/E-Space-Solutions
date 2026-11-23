@@ -33,5 +33,13 @@ namespace my_new_system
                 this.Hide(); // Current form hide 
             }
         }
+
+        private void btnreporadmin_Click(object sender, EventArgs e)
+        {
+            report report = new report();
+            report.Show();
+
+            this.Hide();
+        }
     }
 }

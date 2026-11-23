@@ -80,6 +80,7 @@
             this.btnreporadmin.TabIndex = 12;
             this.btnreporadmin.Text = "Reports";
             this.btnreporadmin.UseVisualStyleBackColor = true;
+            this.btnreporadmin.Click += new System.EventHandler(this.btnreporadmin_Click);
             // 
             // btnusers
             // 
