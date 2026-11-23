@@ -129,7 +129,10 @@ Integrated Security=True";
 
         private void btnbackjobrepo_Click(object sender, EventArgs e)
         {
+            ColonySuperintendentdas colonySuperintendentdas = new ColonySuperintendentdas();
+            colonySuperintendentdas.Show();
 
+            this.Hide();
         }
     }
 }
