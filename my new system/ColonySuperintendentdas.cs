@@ -23,5 +23,23 @@ namespace my_new_system
             colo.Show();
             this.Hide();
         }
+
+        private void ColonySuperintendentdas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogoutcolosup_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnjobrepo_Click(object sender, EventArgs e)
+        {
+            jobrepo jobrepo = new jobrepo();
+            jobrepo.Show();
+
+            this.Hide();
+        }
     }
 }

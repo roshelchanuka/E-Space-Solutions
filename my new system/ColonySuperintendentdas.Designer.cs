@@ -102,6 +102,7 @@
             this.btnjobrepo.TabIndex = 13;
             this.btnjobrepo.Text = "Job Reports";
             this.btnjobrepo.UseVisualStyleBackColor = true;
+            this.btnjobrepo.Click += new System.EventHandler(this.btnjobrepo_Click);
             // 
             // dataGridView1
             // 
@@ -122,6 +123,7 @@
             this.btnlogoutcolosup.TabIndex = 15;
             this.btnlogoutcolosup.Text = "Log Out";
             this.btnlogoutcolosup.UseVisualStyleBackColor = true;
+            this.btnlogoutcolosup.Click += new System.EventHandler(this.btnlogoutcolosup_Click);
             // 
             // ColonySuperintendentdas
             // 
@@ -141,6 +143,7 @@
             this.Name = "ColonySuperintendentdas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ColonySuperintendent";
+            this.Load += new System.EventHandler(this.ColonySuperintendentdas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
