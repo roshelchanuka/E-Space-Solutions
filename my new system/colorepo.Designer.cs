@@ -91,6 +91,7 @@
             this.btnexpocolorepo.TabIndex = 16;
             this.btnexpocolorepo.Text = "Export";
             this.btnexpocolorepo.UseVisualStyleBackColor = true;
+            this.btnexpocolorepo.Click += new System.EventHandler(this.btnexpocolorepo_Click);
             // 
             // btnviewcolorepo
             // 
@@ -101,6 +102,7 @@
             this.btnviewcolorepo.TabIndex = 17;
             this.btnviewcolorepo.Text = "View";
             this.btnviewcolorepo.UseVisualStyleBackColor = true;
+            this.btnviewcolorepo.Click += new System.EventHandler(this.btnviewcolorepo_Click);
             // 
             // btnbackcolorepo
             // 

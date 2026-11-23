@@ -16,7 +16,7 @@ namespace my_new_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new jobrepo());
+            Application.Run(new colorepo());
         }
     }
 }
