@@ -41,5 +41,10 @@ namespace my_new_system
 
             this.Hide();
         }
+
+        private void dataGridViewadmindas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
