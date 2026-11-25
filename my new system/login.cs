@@ -44,7 +44,8 @@ namespace my_new_system
             }
 
             string connectionString =
-                @"Data Source=MSI\SQLEXPRESS;Initial Catalog=MarsColonizationDB;Integrated Security=True;Trust Server Certificate=True";
+                 @"Data Source=.\SQLEXPRESS;Initial Catalog=MarsColonizationDB;Integrated Security=True";
+
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
