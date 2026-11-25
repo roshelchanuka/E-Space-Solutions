@@ -35,18 +35,18 @@
             this.textid = new System.Windows.Forms.TextBox();
             this.labeljobid = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textusrname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textpass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textroleid = new System.Windows.Forms.TextBox();
+            this.textconfigpass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonbackjob = new System.Windows.Forms.Button();
             this.buttondeleteuser = new System.Windows.Forms.Button();
             this.buttonupdateuser = new System.Windows.Forms.Button();
             this.buttoninsertuser = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textsearch = new System.Windows.Forms.TextBox();
             this.btnseruser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusrman)).BeginInit();
@@ -62,7 +62,6 @@
             this.label1.Size = new System.Drawing.Size(307, 42);
             this.label1.TabIndex = 12;
             this.label1.Text = "User Management";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -88,12 +87,13 @@
             // dataGridViewusrman
             // 
             this.dataGridViewusrman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewusrman.Location = new System.Drawing.Point(657, 292);
+            this.dataGridViewusrman.Location = new System.Drawing.Point(540, 259);
             this.dataGridViewusrman.Name = "dataGridViewusrman";
             this.dataGridViewusrman.RowHeadersWidth = 51;
             this.dataGridViewusrman.RowTemplate.Height = 24;
-            this.dataGridViewusrman.Size = new System.Drawing.Size(452, 177);
+            this.dataGridViewusrman.Size = new System.Drawing.Size(661, 177);
             this.dataGridViewusrman.TabIndex = 13;
+            this.dataGridViewusrman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewusrman_CellClick);
             // 
             // textid
             // 
@@ -122,12 +122,12 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "Username";
             // 
-            // textBox1
+            // textusrname
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 323);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 22);
-            this.textBox1.TabIndex = 24;
+            this.textusrname.Location = new System.Drawing.Point(198, 323);
+            this.textusrname.Name = "textusrname";
+            this.textusrname.Size = new System.Drawing.Size(305, 22);
+            this.textusrname.TabIndex = 24;
             // 
             // label4
             // 
@@ -139,13 +139,13 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Password";
             // 
-            // textBox2
+            // textpass
             // 
-            this.textBox2.Location = new System.Drawing.Point(198, 414);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(305, 22);
-            this.textBox2.TabIndex = 26;
+            this.textpass.Location = new System.Drawing.Point(198, 414);
+            this.textpass.Name = "textpass";
+            this.textpass.PasswordChar = '*';
+            this.textpass.Size = new System.Drawing.Size(305, 22);
+            this.textpass.TabIndex = 26;
             // 
             // label5
             // 
@@ -157,21 +157,20 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Role ID";
             // 
-            // textBox3
+            // textroleid
             // 
-            this.textBox3.Location = new System.Drawing.Point(198, 601);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(305, 22);
-            this.textBox3.TabIndex = 28;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textroleid.Location = new System.Drawing.Point(198, 601);
+            this.textroleid.Name = "textroleid";
+            this.textroleid.Size = new System.Drawing.Size(305, 22);
+            this.textroleid.TabIndex = 28;
             // 
-            // textBox4
+            // textconfigpass
             // 
-            this.textBox4.Location = new System.Drawing.Point(198, 510);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(305, 22);
-            this.textBox4.TabIndex = 30;
+            this.textconfigpass.Location = new System.Drawing.Point(198, 510);
+            this.textconfigpass.Name = "textconfigpass";
+            this.textconfigpass.PasswordChar = '*';
+            this.textconfigpass.Size = new System.Drawing.Size(305, 22);
+            this.textconfigpass.TabIndex = 30;
             // 
             // label6
             // 
@@ -192,6 +191,7 @@
             this.buttonbackjob.TabIndex = 34;
             this.buttonbackjob.Text = "Back";
             this.buttonbackjob.UseVisualStyleBackColor = true;
+            this.buttonbackjob.Click += new System.EventHandler(this.buttonbackjob_Click);
             // 
             // buttondeleteuser
             // 
@@ -202,6 +202,7 @@
             this.buttondeleteuser.TabIndex = 33;
             this.buttondeleteuser.Text = "Delete";
             this.buttondeleteuser.UseVisualStyleBackColor = true;
+            this.buttondeleteuser.Click += new System.EventHandler(this.buttondeleteuser_Click);
             // 
             // buttonupdateuser
             // 
@@ -212,6 +213,7 @@
             this.buttonupdateuser.TabIndex = 32;
             this.buttonupdateuser.Text = "Update";
             this.buttonupdateuser.UseVisualStyleBackColor = true;
+            this.buttonupdateuser.Click += new System.EventHandler(this.buttonupdateuser_Click);
             // 
             // buttoninsertuser
             // 
@@ -222,13 +224,14 @@
             this.buttoninsertuser.TabIndex = 31;
             this.buttoninsertuser.Text = "Insert";
             this.buttoninsertuser.UseVisualStyleBackColor = true;
+            this.buttoninsertuser.Click += new System.EventHandler(this.buttoninsertuser_Click);
             // 
-            // textBox5
+            // textsearch
             // 
-            this.textBox5.Location = new System.Drawing.Point(657, 199);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(305, 22);
-            this.textBox5.TabIndex = 35;
+            this.textsearch.Location = new System.Drawing.Point(657, 199);
+            this.textsearch.Name = "textsearch";
+            this.textsearch.Size = new System.Drawing.Size(305, 22);
+            this.textsearch.TabIndex = 35;
             // 
             // btnseruser
             // 
@@ -239,6 +242,7 @@
             this.btnseruser.TabIndex = 36;
             this.btnseruser.Text = "Search";
             this.btnseruser.UseVisualStyleBackColor = true;
+            this.btnseruser.Click += new System.EventHandler(this.btnseruser_Click);
             // 
             // registeruser
             // 
@@ -246,18 +250,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 791);
             this.Controls.Add(this.btnseruser);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textsearch);
             this.Controls.Add(this.buttonbackjob);
             this.Controls.Add(this.buttondeleteuser);
             this.Controls.Add(this.buttonupdateuser);
             this.Controls.Add(this.buttoninsertuser);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textconfigpass);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textroleid);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textpass);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textusrname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textid);
             this.Controls.Add(this.labeljobid);
@@ -267,6 +271,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "registeruser";
             this.Text = "registeruser";
+            this.Load += new System.EventHandler(this.registeruser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewusrman)).EndInit();
             this.ResumeLayout(false);
@@ -283,18 +288,18 @@
         private System.Windows.Forms.TextBox textid;
         private System.Windows.Forms.Label labeljobid;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textusrname;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textpass;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textroleid;
+        private System.Windows.Forms.TextBox textconfigpass;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonbackjob;
         private System.Windows.Forms.Button buttondeleteuser;
         private System.Windows.Forms.Button buttonupdateuser;
         private System.Windows.Forms.Button buttoninsertuser;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textsearch;
         private System.Windows.Forms.Button btnseruser;
     }
 }
