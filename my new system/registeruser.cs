@@ -21,5 +21,10 @@ namespace my_new_system
         {
 
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
